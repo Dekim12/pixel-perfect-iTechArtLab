@@ -1,6 +1,5 @@
 /* Main Slogan */
-.main-slogan {
-  width: 100%;
+.main-slogan-wrapper {
   min-height: 150px;
   padding: 45px 10px;
   background-color: var(--slogan-bg);
@@ -8,12 +7,11 @@
   font-family: 'Source Sans Pro';
 }
 
-.main-slogan-wrapper {
-  width: 100%;
+.main-slogan {
   text-align: center;
 }
 
-.main-slogan-wrapper h2 { 
+.main-slogan-headline { 
   margin-top: 10px;
   font-weight: 900;
   letter-spacing: 0.012rem;
@@ -39,11 +37,12 @@
 }
 
 @media (max-width: 600px) {
-  .main-slogan-content {
-    max-width: 100%;
+  .main-slogan-wrapper {
+    padding: 0px 10px;
   }
 
   .main-slogan-content {
+    max-width: 100%;    
     line-height: 1.35;
   }
 }

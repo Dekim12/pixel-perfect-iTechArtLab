@@ -10,7 +10,7 @@
 
 .navigation-list {  
   display: flex;
-  z-index: 10;
+  z-index: 15;
 }
 
 .navigation-item { 
@@ -29,7 +29,7 @@
   background-color: var(--navigation-item-before);
 }
 
-.navigation-item a {  
+.navigation-link {  
   color: var(--navigation-color);
   font-family: 'Source Sans Pro';
   font-weight: bold;  
@@ -37,7 +37,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.navigation-item a:hover {
+.navigation-link:hover {
   color: var(--navigation-color_h);
 }
 
@@ -88,7 +88,7 @@
     margin-bottom: 1px;
   }
 
-  .navigation-item a { 
+  .navigation-link { 
     color: var(--nav-menu-link-color);
     font-size: 1.3rem;
   }
@@ -99,5 +99,15 @@
 
   .navigation-menu-btn {
     display: block;
+  }
+}
+
+@media (max-width: 800px) {  
+  .navigation-link:hover {
+    color: var(--nav-menu-link-color);
+  }
+
+  .navigation-menu-btn:hover {
+    color: var(--navigation-color); 
   }
 }

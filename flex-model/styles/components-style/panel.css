@@ -50,7 +50,7 @@
   color: var(--info-panel-color);
 }
 
-.info-panel h3 {  
+.info-panel-headline {  
   display: inline-block;
   max-width: 300px;
   margin-bottom: 10px;
@@ -93,7 +93,7 @@
   border-bottom: 0;
 }
 
-.option i {
+.option .fa {
   display: inline-block;
   margin: 0 13px 0 4px;
   color: var(--panel-option-icon);
@@ -103,6 +103,12 @@
 @media (max-width: 1000px) {
   .panel {
     margin: 60px 5px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .panel-switcher-btn:hover {
+    color: var(--panel-switcher-color);
   }
 }
 
@@ -116,7 +122,7 @@
   }
 
   .option {  
-    width: 100%;
+    width: 90%;
     font-size: 0.8rem;
   }
 

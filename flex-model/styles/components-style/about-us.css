@@ -1,9 +1,5 @@
 /* About Us */
 .about-us {
-  width: 100%;
-}
-
-.about-us-wrapper {
   display: flex;
   padding: 61px 15px;
 }
@@ -11,7 +7,7 @@
 .specialist {
   display: flex;
   max-width: 740px;
-  min-height: 196px;
+  min-height: 196px; 
   margin: 0 15px 58px;
 }
 
@@ -31,7 +27,7 @@
   font-family: 'Source Sans Pro';
 }
 
-.specialist h3 {
+.specialist-headline {
   display: inline-block;
   max-width: 500px;
   color: var(--specialist-headline-color);
@@ -40,7 +36,7 @@
   letter-spacing: -0.008rem;
 }
 
-.specialist:nth-child(2) h3{  
+.specialist:nth-child(2) .specialist-headline {  
   letter-spacing: -0.065rem;  
   margin-bottom: 1px;
 }
@@ -78,7 +74,7 @@
 } 
 
 @media (max-width: 1000px) {
-  .about-us-wrapper {
+  .about-us {
     flex-direction: column;
     align-items: center;
   }
@@ -89,9 +85,13 @@
 }
 
 @media (max-width: 800px) {
-  .about-us-wrapper {
+  .about-us {
     padding: 30px 15px;
   }
+
+  .more-specialist-article-btn:hover {
+    background-color: var(--banner-button-bg);
+  } 
 }
 
 @media (max-width: 600px) {

@@ -1,7 +1,5 @@
 /* Banner */
 .banner-wrapper {
-  width: 100%;
-  margin-top: 99px;
   background-color: var(--banner-bg);
 }
 
@@ -39,12 +37,13 @@
   font-family: 'Source Sans Pro';
 }
 
-.banner-description h1 {
+.banner-headline {
   line-height: 1.17;
 }
 
-.banner-description h2 {
+.banner-subtitle {
   color: var(--banner-headline-c);
+  font-size: 1.94rem;
   line-height: 1.51;
   font-weight: 300;
 }
@@ -64,7 +63,7 @@
   min-width: 80px;
   max-width: 350px;
   min-height: 40px;
-  margin: 35px 0 20px 1px;
+  margin: 36px 0 20px 2px;
   padding: 13px 22px;
   border-radius: 2px;
   background-color: var(--banner-button-bg);
@@ -112,6 +111,19 @@
   .banner-image-wrapper {
     margin-right: 7%;
   }
+
+  .banner-subtitle {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner-more-info:hover {
+    background-color: var(--banner-button-bg);
+  } 
 }
 
 @media (max-width: 650px) {
@@ -119,7 +131,7 @@
     padding-top: 20px;
   }
 
-  .banner-description h1 {
+  .banner-headline {
     line-height: 1;
   }
   

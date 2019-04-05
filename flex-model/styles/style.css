@@ -2,7 +2,7 @@
 @import './components-style/header.css';
 @import './components-style/banner.css';
 @import './components-style/navigation.css';
-@import './components-style/common-info.css';
+@import './components-style/info-notices.css';
 @import './components-style/about-us.css';
 @import './components-style/panel.css';
 @import './components-style/main-slogan.css';
@@ -15,7 +15,12 @@
 }
 
 body {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;  
+  min-height: 100vh;
+  padding-top: 99px;
   color: var(--main-text-color);
   background-color: var(--main-bg);
   font-family: Arial, sans-serif;
@@ -68,6 +73,5 @@ h4 {
 
 /* Main */
 .main {
-  width: 100%; 
-  min-height: 88.7vh;
+  flex: 1 0 auto;
 }

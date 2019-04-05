@@ -1,16 +1,15 @@
 /* Events and Reviews */
-.events-and-reviews {
-  width: 100%;
+.events-and-reviews-wrapper {
   background-color: var(--events-and-reviews-bg);
 }
 
-.events-and-reviews-wrapper {  
+.events-and-reviews {  
   padding: 44px 30px 45px;
   font-family: 'Source Sans Pro';
   text-align: center;
 }
 
-.events-and-reviews-wrapper h2 {
+.events-and-reviews-wrapper-headline {
   margin-bottom: 16px;
   color: var(--events-and-reviews-headline-color);
   font-weight: 900;
@@ -41,7 +40,7 @@
     justify-content: flex-start;
   }
 
-  .events-and-reviews-wrapper {  
+  .events-and-reviews {  
     padding: 20px;
     font-family: 'Source Sans Pro';
     text-align: center;
@@ -57,7 +56,7 @@
 }
 
 @media (max-width: 650px) {
-  .events-and-reviews-wrapper h2 {
+  .events-and-reviews-wrapper-headline {
     margin-bottom: 17px;
     line-height: 1;
   }
@@ -127,11 +126,10 @@
   text-align: left;
 }
 
-.event-content h4 {
+.event-headline {
   display: inline-block;
   margin: 1px 0 6px;
   color: var(--event-content-headline-color);
-  letter-spacing: 0.0000001rem;
 }
 
 .comments-count {
@@ -147,7 +145,7 @@
   line-height: 1.6;
 }
 
-.event-description i {
+.event-description .fa {
   display: inline-block;
   padding-bottom: 2px;
   margin-left: 5px;
@@ -158,7 +156,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.event-description i:hover {  
+.event-description .fa:hover {  
   color: var(--comments-count-color_h); 
   transform: scale(1.15)
 }
@@ -170,6 +168,11 @@
 
   .event {
     margin-bottom: 30px;
+  }
+
+  .event-description .fa:hover {  
+    color: var(--comments-count-color); 
+    transform: scale(1)
   }
 }
 
@@ -247,7 +250,7 @@
   user-select: none;
 }
 
-.comment-icon img {
+.comment-icon-logo {
   position: absolute;
   left: 50%;
   top: 50%;
