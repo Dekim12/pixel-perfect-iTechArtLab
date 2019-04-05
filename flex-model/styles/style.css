@@ -1,0 +1,73 @@
+@import './font.css';
+@import './components-style/header.css';
+@import './components-style/banner.css';
+@import './components-style/navigation.css';
+@import './components-style/common-info.css';
+@import './components-style/about-us.css';
+@import './components-style/panel.css';
+@import './components-style/main-slogan.css';
+@import './components-style/events-and-reviews.css';
+@import './components-style/all-content.css';
+@import './components-style/fotter.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: var(--main-text-color);
+  background-color: var(--main-bg);
+  font-family: Arial, sans-serif;
+  font-weight: 1rem;
+}
+
+.content-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--banner-headline-c);
+  font-family: 'Source Sans Pro';
+  font-weight: 900;
+  font-size: 2.69rem;
+  text-transform: uppercase;
+  letter-spacing: 0.006rem;
+}
+
+h2 {
+  font-family: 'Source Sans Pro';
+  font-size: 1.94rem;
+}
+
+h3 {
+  font-family: 'Source Sans Pro';
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-family: 'Source Sans Pro';
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Main */
+.main {
+  width: 100%; 
+  min-height: 88.7vh;
+}

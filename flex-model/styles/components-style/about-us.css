@@ -1,0 +1,121 @@
+/* About Us */
+.about-us {
+  width: 100%;
+}
+
+.about-us-wrapper {
+  display: flex;
+  padding: 61px 15px;
+}
+
+.specialist {
+  display: flex;
+  max-width: 740px;
+  min-height: 196px;
+  margin: 0 15px 58px;
+}
+
+.specialist:last-child {
+  margin-bottom: 0;
+}
+
+.specialist-photo {
+  max-width: 190px;
+  max-height: 195px;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.specialists-article {  
+  margin-left: 26px;
+  font-family: 'Source Sans Pro';
+}
+
+.specialist h3 {
+  display: inline-block;
+  max-width: 500px;
+  color: var(--specialist-headline-color);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.008rem;
+}
+
+.specialist:nth-child(2) h3{  
+  letter-spacing: -0.065rem;  
+  margin-bottom: 1px;
+}
+
+.article-text {
+  display: inline-block;  
+  max-height: 95px;
+  margin: 17px 0 4px 1px;
+  color: var(--article-text-color);
+  font-size: 0.9375rem;
+  line-height: 1.6;  
+  letter-spacing: 0.003rem;
+}
+
+.more-specialist-article-btn {
+  display: block;
+  min-width: 60px;
+  max-width: 300px;
+  min-height: 35px;
+  padding: 11px 16px;
+  margin-left: 4px;
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: var(--banner-button-bg);
+  color: var(--banner-button-color);
+  font-size: 0.95rem;
+  line-height: 1.1;
+  text-transform: uppercase;   
+  transition: 0.3s ease-in-out;  
+  user-select: none;
+}
+
+.more-specialist-article-btn:hover {
+  background-color: var(--banner-button-bg_h);
+} 
+
+@media (max-width: 1000px) {
+  .about-us-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specialist {
+    margin: 0 5px 58px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us-wrapper {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .specialist {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .specialists-article {  
+    margin: 25px 0 0;
+  }
+
+  .article-text {     
+    margin: 15px 0 7px 1px;
+  }
+
+  .more-specialist-article-btn {
+    width: 200px;
+    margin-left: 0;
+  }
+
+  .more-specialist-article-btn {
+    margin: 20px auto 0;
+  }
+}

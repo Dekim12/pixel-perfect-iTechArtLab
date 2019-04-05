@@ -1,0 +1,130 @@
+/* Banner */
+.banner-wrapper {
+  width: 100%;
+  margin-top: 99px;
+  background-color: var(--banner-bg);
+}
+
+.banner {
+  display: flex;   
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 52px 20px 0;
+}
+
+.banner-image-wrapper {
+  position: relative;
+  min-width: 39.2%;
+  padding-top: 30.8%;
+  margin: 0 48px 0 48px;
+  user-select: none;
+}
+
+.banner-image-wrapper::after {
+  content: '';
+  background-image: url('../../images/phone.png');
+  position: absolute;
+  bottom: 0;
+  width: 100%;  
+  min-width: 100px; 
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.banner-description {  
+  padding-top: 27px;
+  margin-left: 24px;
+  font-family: 'Source Sans Pro';
+}
+
+.banner-description h1 {
+  line-height: 1.17;
+}
+
+.banner-description h2 {
+  color: var(--banner-headline-c);
+  line-height: 1.51;
+  font-weight: 300;
+}
+
+.banner-slogan {
+  display: inline-block;
+  max-width: 430px;
+  margin-top: 24px;
+  color: var(--banner-slogan-c);
+  font-size: 1.125rem;  
+  line-height: 1.25;
+  letter-spacing: 0.001rem;
+}
+
+.banner-more-info {
+  display: block;
+  min-width: 80px;
+  max-width: 350px;
+  min-height: 40px;
+  margin: 35px 0 20px 1px;
+  padding: 13px 22px;
+  border-radius: 2px;
+  background-color: var(--banner-button-bg);
+  color: var(--banner-button-color);
+  font-size: 1.12rem;  
+  line-height: 1.02;
+  text-transform: uppercase;
+  user-select: none;
+  transition: 0.3s ease-in-out;
+}
+
+.banner-more-info:hover {
+  background-color: var(--banner-button-bg_h);
+} 
+
+@media (max-width: 1050px) {
+  .banner {  
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .banner-description {
+    align-items: center;    
+    text-align: center;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .banner-image-wrapper {
+    margin: 0;
+    margin-right: 8%;
+  }
+
+  .banner-more-info{
+    width: 250px;
+    margin: 36px auto 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner {  
+    padding: 30px 10px 0;
+  }
+
+  .banner-image-wrapper {
+    margin-right: 7%;
+  }
+}
+
+@media (max-width: 650px) {
+  .banner {
+    padding-top: 20px;
+  }
+
+  .banner-description h1 {
+    line-height: 1;
+  }
+  
+  .banner-slogan {  
+    font-size: 1rem;    
+    margin-top: 10px;
+  }
+}
