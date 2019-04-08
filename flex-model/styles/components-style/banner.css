@@ -25,6 +25,7 @@
   bottom: 0;
   width: 100%;  
   min-width: 100px; 
+  max-height: 348px;
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
