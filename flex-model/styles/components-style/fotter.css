@@ -36,11 +36,12 @@
 }
 
 .social-icon {
-  display: flex;
+  display: flex;  
 }
 
 .social-icon-wrapper {
   width: 33px;
+  min-width: 33px;
   height: 33px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);  

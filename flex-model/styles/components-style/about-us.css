@@ -4,6 +4,10 @@
   padding: 61px 15px;
 }
 
+.our-specialists {
+  width: 100%;
+}
+
 .specialist {
   display: flex;
   max-width: 740px;
@@ -95,10 +99,11 @@
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
-  }
+  } 
 
   .specialists-article {  
     margin: 25px 0 0;
+    width: 100%;
   }
 
   .article-text {     
