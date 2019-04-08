@@ -1,6 +1,6 @@
 /* All content */
 .all-content-wrapper {
-  background-color: var(--all-content-bg);
+  background-color: rgb(109, 197, 221);
 }
 
 .all-content {
@@ -17,7 +17,7 @@
 }
 
 .content-block-headline {
-  color: var(--content-block-headline-color);
+  color: rgb(255, 255, 255);
   font-weight: 900;
   line-height: 1.2;
   letter-spacing: 0.02rem;
@@ -28,7 +28,7 @@
 }
 
 .content-point {
-  color: var(--content-point-color);  
+  color: rgb(255, 255, 255); 
   font-size: 0.875rem;
   line-height: 1.9;
   letter-spacing: 0.01rem;

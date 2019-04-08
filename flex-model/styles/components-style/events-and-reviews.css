@@ -1,17 +1,17 @@
 /* Events and Reviews */
 .events-and-reviews-wrapper {
-  background-color: var(--events-and-reviews-bg);
+  background-color: rgb(255, 255, 255);
 }
 
 .events-and-reviews {  
   padding: 44px 30px 45px;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
 }
 
 .events-and-reviews-wrapper-headline {
   margin-bottom: 16px;
-  color: var(--events-and-reviews-headline-color);
+  color: rgb(0, 61, 72);
   font-weight: 900;
   line-height: 1.65;
   letter-spacing: 0.015rem;
@@ -19,7 +19,7 @@
 
 .events-slogan {
   padding-bottom: 2px;
-  color: var(--events-slogan-color);
+  color: rgb(109, 197, 221);
   border-top: 1px solid rgb(219, 219, 219);
   border-bottom: 1px solid rgb(219, 219, 219);  
   font-size: 1.375rem;
@@ -42,7 +42,7 @@
 
   .events-and-reviews {  
     padding: 20px;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
   }
 }
@@ -70,7 +70,7 @@
 /* Events */
 .events-list {
   max-width: 540px;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .event {
@@ -90,8 +90,8 @@
   margin-top: 1px;
   border-radius: 3px;
   text-align: center;
-  background-color: var(--event-data-bg);
-  color: var(--event-data-color);
+  background-color: rgb(109, 197, 221);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 2.1rem;
   line-height: 0.7;
@@ -118,7 +118,7 @@
   top: -7px;
   width: 70px;
   height: 1px;
-  background-color: var(--events-and-reviews-bg);
+  background-color: rgb(255, 255, 255);
 }
 
 .event-content {
@@ -129,18 +129,18 @@
 .event-headline {
   display: inline-block;
   margin: 1px 0 6px;
-  color: var(--event-content-headline-color);
+  color: rgb(0, 61, 72);
 }
 
 .comments-count {
   display: block;
   margin-bottom: 11px;
-  color: var(--comments-count-color);
+  color: rgb(247, 116, 98);
   font-size: 0.875rem;
 }
 
 .event-description {
-  color: var(--event-description-color);  
+  color: rgb(120, 120, 120);  
   font-size: 0.9375rem;    
   line-height: 1.6;
 }
@@ -149,7 +149,7 @@
   display: inline-block;
   padding-bottom: 2px;
   margin-left: 5px;
-  color: var(--comments-count-color); 
+  color: rgb(247, 116, 98);
   vertical-align: bottom;
   font-size: 1.15rem;
   cursor: pointer;
@@ -157,7 +157,7 @@
 }
 
 .event-description .fa:hover {  
-  color: var(--comments-count-color_h); 
+  color: rgb(155, 66, 54);
   transform: scale(1.15)
 }
 
@@ -171,7 +171,7 @@
   }
 
   .event-description .fa:hover {  
-    color: var(--comments-count-color); 
+    color: rgb(247, 116, 98); 
     transform: scale(1)
   }
 }
@@ -199,7 +199,7 @@
 /* Reviews */
 .reviews-list {
   max-width: 540px;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .comment {
@@ -211,7 +211,7 @@
   margin-right: 30px;
   padding: 30px;
   border-radius: 5px;
-  background-color: var(--comment-bg);
+  background-color: rgb(236, 236, 236);
   text-align: left;
 }
 
@@ -226,13 +226,13 @@
 .comment-description {
   margin-top: 7px;
   margin-bottom: 8px;
-  color: var(--comment-description-color);
+  color: rgb(140, 145, 147);
   font-size: 0.9375rem;
   line-height: 1.6;
 }
 
 .author {
-  color: var(--comments-count-color);
+  color: rgb(247, 116, 98);
   font-weight: 900;
   line-height: 1.7;
 }
@@ -246,7 +246,7 @@
   margin-top: 2px;
   margin-left: 5px;
   border-radius: 50%;
-  background-color: var(--comment-icon-bg);
+  background-color: rgb(255, 255, 255);
   user-select: none;
 }
 

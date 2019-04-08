@@ -2,9 +2,9 @@
 .main-slogan-wrapper {
   min-height: 150px;
   padding: 45px 10px;
-  background-color: var(--slogan-bg);
-  color: var(--slogan-color);
-  font-family: 'Source Sans Pro';
+  background-color: rgb(247, 116, 98);
+  color: rgb(255, 255, 255);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .main-slogan {

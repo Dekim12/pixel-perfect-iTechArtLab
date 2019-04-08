@@ -1,6 +1,6 @@
 /* Banner */
 .banner-wrapper {
-  background-color: var(--banner-bg);
+  background-color: rgb(240, 240, 240);
 }
 
 .banner {
@@ -34,7 +34,7 @@
 .banner-description {  
   padding-top: 27px;
   margin-left: 24px;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .banner-headline {
@@ -42,7 +42,7 @@
 }
 
 .banner-subtitle {
-  color: var(--banner-headline-c);
+  color: rgb(0, 61, 72);
   font-size: 1.94rem;
   line-height: 1.51;
   font-weight: 300;
@@ -52,7 +52,7 @@
   display: inline-block;
   max-width: 430px;
   margin-top: 24px;
-  color: var(--banner-slogan-c);
+  color: rgb(139, 139, 139);
   font-size: 1.125rem;  
   line-height: 1.25;
   letter-spacing: 0.001rem;
@@ -66,8 +66,8 @@
   margin: 36px 0 20px 2px;
   padding: 13px 22px;
   border-radius: 2px;
-  background-color: var(--banner-button-bg);
-  color: var(--banner-button-color);
+  background-color: rgb(247, 116, 98);
+  color: rgb(255, 255, 255);
   font-size: 1.12rem;  
   line-height: 1.02;
   text-transform: uppercase;
@@ -76,7 +76,7 @@
 }
 
 .banner-more-info:hover {
-  background-color: var(--banner-button-bg_h);
+  background-color: rgb(182, 58, 41);
 } 
 
 @media (max-width: 1050px) {
@@ -122,7 +122,7 @@
 
 @media (max-width: 800px) {
   .banner-more-info:hover {
-    background-color: var(--banner-button-bg);
+    background-color: rgb(247, 116, 98);
   } 
 }
 

@@ -8,7 +8,7 @@
   display: flex;
   max-width: 740px;
   min-height: 196px; 
-  margin: 0 15px 58px;
+  margin: 0 15px 59px;
 }
 
 .specialist:last-child {
@@ -24,28 +24,23 @@
 
 .specialists-article {  
   margin-left: 26px;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .specialist-headline {
   display: inline-block;
   max-width: 500px;
-  color: var(--specialist-headline-color);
+  color: rgb(0, 61, 72);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.008rem;
-}
-
-.specialist:nth-child(2) .specialist-headline {  
-  letter-spacing: -0.065rem;  
-  margin-bottom: 1px;
 }
 
 .article-text {
   display: inline-block;  
   max-height: 95px;
   margin: 17px 0 4px 1px;
-  color: var(--article-text-color);
+  color: rgb(140, 145, 147);
   font-size: 0.9375rem;
   line-height: 1.6;  
   letter-spacing: 0.003rem;
@@ -60,8 +55,8 @@
   margin-left: 4px;
   margin-top: 20px;
   border-radius: 3px;
-  background-color: var(--banner-button-bg);
-  color: var(--banner-button-color);
+  background-color: rgb(247, 116, 98);
+  color: rgb(255, 255, 255);
   font-size: 0.95rem;
   line-height: 1.1;
   text-transform: uppercase;   
@@ -70,7 +65,7 @@
 }
 
 .more-specialist-article-btn:hover {
-  background-color: var(--banner-button-bg_h);
+  background-color: rgb(182, 58, 41);
 } 
 
 @media (max-width: 1000px) {
@@ -90,7 +85,7 @@
   }
 
   .more-specialist-article-btn:hover {
-    background-color: var(--banner-button-bg);
+    background-color: rgb(247, 116, 98);
   } 
 }
 

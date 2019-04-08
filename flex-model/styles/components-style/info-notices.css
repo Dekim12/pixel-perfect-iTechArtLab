@@ -1,7 +1,7 @@
 /* Common info section */
 .info-notices-wrapper {
   padding: 20px 30px 19px;
-  background-color: var(--common-info-bg);
+  background-color: rgb(109, 197, 221);
 }
 
 .info-notices {
@@ -31,7 +31,7 @@
   min-width: 65px;
   min-height: 65px;
   border-radius: 50%;
-  background-color: var(--notice-icon-bg);
+  background-color: rgb(255, 255, 255);
   user-select: none;
 }
 
@@ -49,7 +49,7 @@
 .notice-content {
   width: 240px;
   margin-left: 23px;
-  color: var(--notice-content-color);
+  color: rgb(255, 255, 255);
 }
 
 .notice-headline {
@@ -58,7 +58,7 @@
 
 .notice-info {
   margin: 21px 0 20px;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.9375rem;
   line-height: 1.6;
   overflow: hidden;
@@ -68,16 +68,16 @@
 
 .more-notice-info {
   margin-left: 2px;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
   vertical-align: top;
-  color: var(--notice-content-color);  
+  color: rgb(255, 255, 255); 
   user-select: none;
   transition: 0.3s ease-in-out;
 }
 
 .more-notice-info:hover {
-  color: var(--more-notice-info-color_h);
+  color: rgb(120, 69, 202);
 }
 
 .more-notice-info .fa {
@@ -120,7 +120,7 @@
   }
 
   .more-notice-info:hover {
-    color: var(--notice-content-color);
+    color: rgb(255, 255, 255);
   }
 }
 

@@ -1,8 +1,9 @@
 /* Panel */
 .panel {
   width: 340px;
+  min-width: 320px;
   margin: 0 15px;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .panel-switcher {
@@ -19,7 +20,7 @@
   border-bottom: 0;
   border-radius: 5px 5px 0 0;
   font-weight: 900;
-  color: var(--panel-switcher-color);   
+  color: rgb(120, 120, 120);   
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -31,12 +32,12 @@
 }
 
 .panel-switcher-btn:hover {
-  color: var(--panel-switcher-color_h);
+  color: rgb(73, 73, 73);
 }
 
 .panel-switcher:checked + .panel-switcher-btn {
-  color: var(--panel-switcher-checked-color);
-  background-color: var(--panel-switcher-checked-bg);
+  color: rgb(247, 116, 98);
+  background-color: rgb(0, 61, 72);
   cursor: default;
 }
 
@@ -46,15 +47,15 @@
   margin-top: -2px;
   border: 2px solid rgb(236, 236, 236); 
   border-radius: 0 5px 0 0;
-  background-color: var(--info-panel-bg);
-  color: var(--info-panel-color);
+  background-color: rgb(0, 61, 72);
+  color: rgb(255, 255, 255);
 }
 
 .info-panel-headline {  
   display: inline-block;
   max-width: 300px;
   margin-bottom: 10px;
-  color: var(--info-panel-headline-color);
+  color: rgb(109, 197, 221);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.008rem;
@@ -82,7 +83,7 @@
   width: 280px;
   border-bottom: 1px solid rgb(236, 236, 236);
   font-size: 0.9375rem;
-  color: var(--panel-option-color);
+  color: rgb(120, 120, 120);
   line-height: 2.5;  
   white-space: nowrap;
   overflow: hidden;
@@ -96,7 +97,7 @@
 .option .fa {
   display: inline-block;
   margin: 0 13px 0 4px;
-  color: var(--panel-option-icon);
+  color: rgb(247, 116, 98);
   font-size: 0.85rem;
 }
 
@@ -108,7 +109,7 @@
 
 @media (max-width: 800px) {
   .panel-switcher-btn:hover {
-    color: var(--panel-switcher-color);
+    color: rgb(120, 120, 120);
   }
 }
 
