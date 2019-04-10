@@ -15,9 +15,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   width: 100%;  
   min-height: 100vh;
   padding-top: 99px;
@@ -72,6 +69,3 @@ h4 {
 }
 
 /* Main */
-.main {
-  flex: 1 0 auto;
-}

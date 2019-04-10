@@ -1,0 +1,172 @@
+/* Banner */
+.banner-wrapper {
+  background-color: rgb(240, 240, 240);
+}
+
+.banner {
+  padding: 52px 20px 0;
+  min-height: 400px;
+  position: relative;
+}
+
+.banner-image-wrapper {
+  position: relative;
+  min-width: 39.2%;
+  padding-top: 30.8%;
+  margin-left: 49px;
+  user-select: none;
+  float: left;
+}
+
+.banner-image-wrapper::after {
+  content: '';
+  background-image: url('../../images/phone.png');
+  position: absolute;
+  bottom: 0;
+  width: 100%;  
+  min-width: 100px; 
+  max-height: 348px;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.banner-description {  
+  padding-top: 27px;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  max-width: 565px;
+  float: right;
+  margin-right: 2px;
+}
+
+.banner-headline {
+  line-height: 1.12;
+}
+
+.banner-subtitle {
+  color: rgb(0, 61, 72);
+  font-size: 1.94rem;
+  line-height: 1.51;
+  font-weight: 300;
+}
+
+.banner-slogan {
+  display: inline-block;
+  max-width: 430px;
+  margin-top: 26px;
+  color: rgb(139, 139, 139);
+  font-size: 1.125rem;  
+  line-height: 1.25;
+  letter-spacing: 0.001rem;
+}
+
+.banner-more-info {
+  display: block;
+  min-width: 80px;
+  max-width: 350px;
+  min-height: 40px;
+  margin: 36px 0 20px 1px;
+  padding: 13px 22px;
+  border-radius: 2px;
+  background-color: rgb(247, 116, 98);
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;  
+  line-height: 1.02;
+  text-transform: uppercase;
+  user-select: none;
+  transition: 0.3s ease-in-out;
+}
+
+.banner-more-info:hover {
+  background-color: rgb(182, 58, 41);
+} 
+
+@media (max-width: 1170px) {
+  .banner-image-wrapper {
+    margin-right: 12%;  
+    margin-top: 30px;
+    float: none;
+  }
+
+  .banner-description {  
+    max-width: 90%; 
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+  }
+
+  .banner-subtitle {
+    text-align: center;
+  }
+
+  .banner-headline {
+    text-align: center;
+  }
+
+  .banner-slogan {
+    text-align: center;
+    min-width: 100%;
+  }
+
+  .banner-more-info{
+    width: 250px;
+    margin: 36px auto 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner {  
+    padding: 30px 10px 0;
+  }
+
+  .banner-image-wrapper {
+    margin-right: 13%;
+  }
+
+  .banner-subtitle {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner-more-info:hover {
+    background-color: rgb(247, 116, 98);
+  } 
+}
+
+@media (max-width: 650px) {
+  .banner {
+    padding-top: 20px;
+  }
+
+  .banner-description {  
+    max-width: 100%; 
+  }
+
+  .banner-image-wrapper {
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 570px) {
+  .banner-image-wrapper {
+    margin-right: 17%;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner-image-wrapper {
+    margin-right: 18.5%;
+  }
+}
+
+@media (max-width: 380px) {
+  .banner-image-wrapper {
+    margin-right: 20.5%;
+  }
+}

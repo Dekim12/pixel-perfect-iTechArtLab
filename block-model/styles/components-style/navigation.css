@@ -1,15 +1,17 @@
 /* Navigation */
 .navigation-wrapper {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;  
   width: 100%;
-  height: 99px;
+  height: 99px; 
+  padding-top: 25px;
 }
 
-.navigation-list {  
-  display: flex;
+.navigation {  
+  float: right;
+  margin-top: 15px;
+}
+
+.navigation-list { 
   z-index: 15;
 }
 
@@ -17,6 +19,7 @@
   position: relative;  
   padding: 0 27px;
   margin-bottom: 1px;
+  float: left;
 }
 
 .navigation-item:not(:last-child)::before {  
@@ -75,8 +78,6 @@
     height: 100vh;
     top: 0;
     left: -10000px;
-    flex-direction: column;
-    align-items: flex-start;
     width: 250px;
     padding: 30px 20px 30px 70px;
     background-color: rgba(0, 0, 0, 0.8);  
@@ -86,6 +87,7 @@
   .navigation-item { 
     padding: 20px 0;
     margin-bottom: 1px;
+    clear: left;
   }
 
   .navigation-link { 
