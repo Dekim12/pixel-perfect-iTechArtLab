@@ -1,0 +1,77 @@
+@import './font.css';
+@import './components-style/header.css';
+@import './components-style/banner.css';
+@import './components-style/navigation.css';
+@import './components-style/info-notices.css';
+@import './components-style/about-us.css';
+@import './components-style/panel.css';
+@import './components-style/main-slogan.css';
+@import './components-style/events-and-reviews.css';
+@import './components-style/all-content.css';
+@import './components-style/fotter.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;  
+  min-height: 100vh;
+  padding-top: 99px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  font-weight: 1rem;
+}
+
+.content-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headline-1 {
+  color: rgb(0, 61, 72);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  font-size: 2.69rem;
+  text-transform: uppercase;
+  letter-spacing: 0.006rem;
+}
+
+.headline-2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.94rem;
+}
+
+.headline-3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+}
+
+.headline-4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Main */
+.main {
+  flex: 1 0 auto;
+}

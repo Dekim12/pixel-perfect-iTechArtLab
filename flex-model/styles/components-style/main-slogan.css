@@ -1,0 +1,48 @@
+/* Main Slogan */
+.main-slogan-wrapper {
+  min-height: 150px;
+  padding: 45px 10px;
+  background-color: rgb(247, 116, 98);
+  color: rgb(255, 255, 255);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-slogan {
+  text-align: center;
+}
+
+.main-slogan-headline { 
+  margin-top: 10px;
+  font-weight: 900;
+  letter-spacing: 0.012rem;
+}
+
+.main-slogan-content {
+  display: inline-block;
+  max-width: 57%;
+  margin: 10px 0 5px;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .main-slogan-content {
+    max-width: 80%;
+  }
+
+  .main-slogan {
+    padding: 20px 10px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-slogan-wrapper {
+    padding: 0px 10px;
+  }
+
+  .main-slogan-content {
+    max-width: 100%;    
+    line-height: 1.35;
+  }
+}

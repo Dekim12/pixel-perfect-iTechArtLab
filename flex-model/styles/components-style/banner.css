@@ -1,0 +1,144 @@
+/* Banner */
+.banner-wrapper {
+  background-color: rgb(240, 240, 240);
+}
+
+.banner {
+  display: flex;   
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 52px 20px 0;
+}
+
+.banner-image-wrapper {
+  position: relative;
+  min-width: 39.2%;
+  padding-top: 30.8%;
+  margin: 0 48px 0 48px;
+  user-select: none;
+}
+
+.banner-image-wrapper::after {
+  content: '';
+  background-image: url('../../images/phone.png');
+  position: absolute;
+  bottom: 0;
+  width: 100%;  
+  min-width: 100px; 
+  max-height: 348px;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.banner-description {  
+  padding-top: 27px;
+  margin-left: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+}
+
+.banner-headline {
+  line-height: 1.17;
+}
+
+.banner-subtitle {
+  color: rgb(0, 61, 72);
+  font-size: 1.94rem;
+  line-height: 1.51;
+  font-weight: 300;
+}
+
+.banner-slogan {
+  display: inline-block;
+  max-width: 430px;
+  margin-top: 24px;
+  color: rgb(139, 139, 139);
+  font-size: 1.125rem;  
+  line-height: 1.25;
+  letter-spacing: 0.001rem;
+}
+
+.banner-more-info {
+  display: block;
+  min-width: 80px;
+  max-width: 350px;
+  min-height: 40px;
+  margin: 36px 0 20px 2px;
+  padding: 13px 22px;
+  border-radius: 2px;
+  background-color: rgb(247, 116, 98);
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;  
+  line-height: 1.02;
+  text-transform: uppercase;
+  user-select: none;
+  transition: 0.3s ease-in-out;
+}
+
+.banner-more-info:hover {
+  background-color: rgb(182, 58, 41);
+} 
+
+@media (max-width: 1050px) {
+  .banner {  
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .banner-description {
+    align-items: center;    
+    text-align: center;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .banner-image-wrapper {
+    margin: 0;
+    margin-right: 8%;
+  }
+
+  .banner-more-info{
+    width: 250px;
+    margin: 36px auto 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner {  
+    padding: 30px 10px 0;
+  }
+
+  .banner-image-wrapper {
+    margin-right: 7%;
+  }
+
+  .banner-subtitle {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner-more-info:hover {
+    background-color: rgb(247, 116, 98);
+  } 
+}
+
+@media (max-width: 650px) {
+  .banner {
+    padding-top: 20px;
+  }
+
+  .banner-headline {
+    line-height: 1;
+  }
+  
+  .banner-slogan {  
+    font-size: 1rem;    
+    margin-top: 10px;
+  }
+}
