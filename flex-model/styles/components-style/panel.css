@@ -1,7 +1,7 @@
 /* Panel */
 .panel {
   width: 340px;
-  min-width: 320px;
+  min-width: 340px;
   margin: 0 15px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -114,7 +114,8 @@
 
 @media (max-width: 500px) {
   .panel {
-    width: 100%;
+    min-width: 300px;
+    width: 300px;
   }
 
   .info-panel {

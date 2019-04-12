@@ -89,12 +89,12 @@
 @media (max-width: 1100px) {
   .notice:last-child {
     margin-left: 10px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 }
 
 @media (max-width: 820px) {
-  .common-info {
+    .common-info {
     padding: 20px;
   }
 
@@ -117,7 +117,7 @@
   }
 
   .notice:last-child {
-    margin: 20px auto -20px;
+    margin: 20px auto -5px;
   }
 
   .more-notice-info:hover {
@@ -125,7 +125,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .notice {   
     flex-direction: column;
     align-items: center;
@@ -136,5 +136,9 @@
 
   .notice-content {
     margin: 10px 0;
+  }
+
+  .notice:last-child {
+    margin: 15px auto;
   }
 }
