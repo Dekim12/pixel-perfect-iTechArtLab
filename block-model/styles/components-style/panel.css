@@ -64,7 +64,7 @@
 }
 
 .info-panel-description {
-  display: inline-block;
+  display: block;
   margin-left: 2px;
   max-height: 240px;
   font-size: 0.9375rem;
@@ -101,7 +101,8 @@
   font-size: 0.85rem;
 }
 
-@media (max-width: 1000px) {
+
+@media (max-width: 1160px) {
   .panel {
     margin: 60px 5px 0;
   }

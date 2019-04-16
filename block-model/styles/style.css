@@ -70,3 +70,6 @@ h4 {
 }
 
 /* Main */
+.main {
+    min-height: calc(100vh - 206px);
+}
