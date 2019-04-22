@@ -16,7 +16,9 @@
   padding-top: 30.8%;
   margin-left: 49px;
   user-select: none;
-  float: left;
+  display: inline-block;
+
+  vertical-align: bottom;
 }
 
 .banner-image-wrapper::after {
@@ -88,7 +90,7 @@
   .banner-image-wrapper {
     margin-right: 12%;  
     margin-top: 30px;
-    float: none;
+    display: block;
   }
 
   .banner-description {  
