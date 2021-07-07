@@ -1,0 +1,131 @@
+/* About Us */
+.about-us {
+  padding: 61px 15px 57px;
+  text-align: center;
+}
+
+.our-specialists {
+  width: 100%;
+  max-width: 766px;
+  display: inline-block;
+  text-align: left;
+}
+
+.specialist {
+  max-width: 740px;
+  min-height: 196px; 
+  margin: 0 0 59px 2px;
+  width: 100%;
+}
+
+.specialist:last-child {
+  margin-bottom: 0;
+}
+
+.specialist-photo {
+  display: inline-block;
+  max-width: 190px;
+  max-height: 195px;
+  margin-left: 0px;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.specialists-article {  
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  max-width: 524px;
+  vertical-align: top;
+}
+
+.specialist-headline {
+  display: inline-block;
+  max-width: 500px;
+  color: rgb(0, 61, 72);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.008rem;
+}
+
+.article-text {
+  display: inline-block;  
+  max-height: 95px;
+  margin: 17px 0 4px 1px;
+  color: rgb(140, 145, 147);
+  font-size: 0.9375rem;
+  line-height: 1.6;  
+  letter-spacing: 0.003rem; 
+}
+
+.more-specialist-article-btn {
+  display: block;
+  min-width: 60px;
+  max-width: 300px;
+  min-height: 35px;
+  padding: 11px 16px;
+  margin-left: 4px;
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: rgb(247, 116, 98);
+  color: rgb(255, 255, 255);
+  font-size: 0.95rem;
+  line-height: 1.1;
+  text-transform: uppercase;   
+  transition: 0.3s ease-in-out;  
+  user-select: none;
+}
+
+.more-specialist-article-btn:hover {
+  background-color: rgb(182, 58, 41);
+} 
+
+@media (max-width: 1160px) {
+  .our-specialists { 
+    display: block;
+    margin: 0 auto;
+  }
+
+  .specialist {
+    margin: 0 auto 45px;
+  }
+}
+
+@media (max-width: 800px) {
+  .specialist {
+    width: 100%;
+    text-align: center;
+  }
+
+  .specialist-photo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .specialists-article {  
+    margin: 25px 0 0;
+    width: 100%;
+  }
+
+  .article-text {     
+    margin: 15px 0 7px 1px;
+  }
+
+  .more-specialist-article-btn {
+    width: 200px;
+    margin-left: 0;
+  }
+
+  .more-specialist-article-btn {
+    margin: 20px auto 0;
+  }
+
+  .about-us {
+    padding: 30px 15px;
+  }
+
+  .more-specialist-article-btn:hover {
+    background-color: rgb(247, 116, 98);
+  } 
+}

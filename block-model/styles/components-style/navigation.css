@@ -1,0 +1,115 @@
+/* Navigation */
+.navigation-wrapper {
+  position: relative;
+  width: 100%;
+  height: 99px; 
+  padding-top: 25px;
+}
+
+.navigation {  
+  float: right;
+  margin-top: 15px;
+}
+
+.navigation-list { 
+  z-index: 15;
+}
+
+.navigation-item { 
+  position: relative;  
+  padding: 0 27px;
+  margin-bottom: 1px;
+  float: left;
+}
+
+.navigation-item:not(:last-child)::before {  
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  width: 1px;
+  height: 12px;
+  background-color: rgb(231, 231, 231);
+}
+
+.navigation-link {  
+  color: rgb(120, 120, 120);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;  
+  letter-spacing: 0.037rem;
+  transition: 0.3s ease-in-out;
+}
+
+.navigation-link:hover {
+  color: rgb(109, 197, 221);
+}
+
+.navigation-menu-btn {
+  display: none;
+  color: rgb(120, 120, 120);  
+  font-weight: 700;  
+  font-size: 1.1rem;  
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s ease-in-out;  
+  padding-right: 15px;
+}
+
+.navigation-menu-btn:hover {
+  color: rgb(109, 197, 221);
+}
+
+.menu {
+  display: none;
+}
+
+.menu:checked ~ .navigation-list {
+  left: 0px;
+  transition: all 0.5s ease-out
+}
+
+.menu:checked ~ .navigation-menu-btn {
+  color: rgb(124, 42, 36);
+}
+
+@media (max-width: 1000px) {
+  .navigation-list {  
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: -10000px;
+    width: 250px;
+    padding: 30px 20px 30px 70px;
+    background-color: rgba(0, 0, 0, 0.8);  
+    transition: all 0.5s ease-in-out; 
+  }
+
+  .navigation-item { 
+    padding: 20px 0;
+    margin-bottom: 1px;
+    clear: left;
+  }
+
+  .navigation-link { 
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+  }
+  
+  .navigation-item:before {
+    display: none;
+  }
+
+  .navigation-menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {  
+  .navigation-link:hover {
+    color: rgb(255, 255, 255)
+  }
+
+  .navigation-menu-btn:hover {
+    color: rgb(120, 120, 120); 
+  }
+}

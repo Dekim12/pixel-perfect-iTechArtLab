@@ -1,0 +1,135 @@
+/* Panel */
+.panel {
+  width: 340px;
+  min-width: 280px;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  text-align: left;
+}
+
+.panel-switcher {
+  display: none;
+}
+
+.panel-switcher-btn {
+  display: inline-block;
+  border: 2px solid rgb(236, 236, 236); 
+  max-width: 150px; 
+  padding: 11px 22px;
+  margin-right: 10px;
+  margin-bottom: -2px;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  font-weight: 900;
+  color: rgb(120, 120, 120);   
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.25;
+  cursor: pointer;   
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.panel-switcher-btn:hover {
+  color: rgb(73, 73, 73);
+}
+
+.panel-switcher:checked + .panel-switcher-btn {
+  color: rgb(247, 116, 98);
+  background-color: rgb(0, 61, 72);
+  cursor: default;
+}
+
+.info-panel {
+  width: 100%;
+  padding: 24px 30px 22px;
+  margin-top: -2px;
+  border: 2px solid rgb(236, 236, 236); 
+  border-radius: 0 5px 0 0;
+  background-color: rgb(0, 61, 72);
+  color: rgb(255, 255, 255);
+}
+
+.info-panel-headline {  
+  display: inline-block;
+  max-width: 300px;
+  margin-bottom: 10px;
+  color: rgb(109, 197, 221);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.008rem;
+}
+
+.info-panel-description {
+  display: block;
+  margin-left: 2px;
+  max-height: 240px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.panel-options {
+  padding: 22px 20px;
+  border: 2px solid rgb(236, 236, 236); 
+  border-top: 0;
+  border-radius:0 0 5px 5px;  
+}
+
+.option {  
+  width: 280px;
+  padding-left: 7px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+  font-size: 0.9375rem;
+  color: rgb(120, 120, 120);
+  line-height: 2.5;  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.option:last-child {
+  border-bottom: 0;
+}
+
+.option .fa {
+  display: inline-block;
+  margin: 0 13px 0 4px;
+  color: rgb(247, 116, 98);
+  font-size: 0.85rem;
+}
+
+
+@media (max-width: 1160px) {
+  .panel {
+    margin: 60px 5px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .panel-switcher-btn:hover {
+    color: rgb(120, 120, 120);
+  }
+}
+
+@media (max-width: 500px) {
+  .panel {
+    width: 100%;
+    margin: 50px 0 0; 
+  }
+
+  .info-panel {
+    padding: 15px 20px;
+  }
+
+  .option {  
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  .panel-options {
+    padding: 15px 10px;
+  }
+}

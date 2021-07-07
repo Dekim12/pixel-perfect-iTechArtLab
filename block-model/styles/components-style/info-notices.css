@@ -1,0 +1,140 @@
+/* Common info section */
+.info-notices-wrapper {
+  padding: 20px 30px 19px;
+  background-color: rgb(109, 197, 221);
+}
+
+.info-notices {
+  min-height: 231px;
+  width: 100%;
+  text-align: center;
+}
+
+.notice {
+  display: inline-block;
+  width: 350px;
+  min-height: 151px;
+  margin: 40px 10px 40px 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.notice-icon {
+  position: relative;
+  float: left;
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+  min-height: 65px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  user-select: none;
+}
+
+.notice-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  max-height: 70%;
+  margin-top: -1px;
+  margin-left: 1px;
+}
+
+.notice-content {
+  width: 240px;
+  margin-left: 90px;
+  color: rgb(255, 255, 255);
+}
+
+.notice-headline {
+  font-weight: bold;
+}
+
+.notice-info {
+  margin: 21px 0 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.006rem;
+}
+
+.more-notice-info {
+  margin-left: 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  vertical-align: top;
+  color: rgb(255, 255, 255); 
+  user-select: none;
+  transition: 0.3s ease-in-out;
+}
+
+.more-notice-info:hover {
+  color: rgb(120, 69, 202);
+}
+
+.more-notice-info .fa {
+  margin-left: 7px;
+  margin-top: 3px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1100px) {
+  .info-notices-wrapper {
+    padding: 20px 30px 35px;
+  }
+
+  .notice:last-child {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 831px) {
+  .common-info {
+    padding: 20px;
+  }
+
+  .notice {
+    width: 100%;
+    padding-left: 0;
+    margin: 20px 0;
+  }
+
+  .notice-content {
+    width: 80%;
+  }
+
+  .notice-info {    
+    margin: 10px 0;
+  }
+
+  .notice:last-child {
+    margin: 20px auto -20px;
+  }
+
+  .more-notice-info:hover {
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 500px) {
+  .notice {   
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .notice-content {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .notice-icon {
+    float: none;
+    margin: 0 auto;
+  }
+}
